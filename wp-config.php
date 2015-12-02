@@ -23,10 +23,10 @@
 define('DB_NAME', 'vacablog');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'WDAWP011');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', '16349857');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
