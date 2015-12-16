@@ -1,0 +1,83 @@
+$img: "../img/";
+$bgcolor: #33ccff;
+$margtop: 50px;
+$font : "Arial", Helvetica, Roboto, Arial, sans-serif;
+
+.top-bar {
+
+    overflow: visible;
+    margin-top: $margtop - 30px;
+
+    section li:not(.has-form) a:not(.button) {
+
+    background: $bgcolor;
+    line-height: 3.8125rem;
+    padding: 0 4.34rem;
+}
+section ul li > a {
+    color: #FFFFFF;
+    display: block;
+    font-family: $font;
+    font-size: 0.8525rem;
+    font-weight: bold;
+    padding-left: 0.9375rem;
+    padding: 12px 0 12px 0.9375rem;
+    text-transform: none;
+    width: 100%;
+}
+}
+.orbit-container {
+    background: none;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: $margtop;
+}
+h1 {
+        font-family: $font;
+        color: #FFFFFF;
+        line-height: 3.8125rem;
+}
+h3 {
+	    font-family: $font;
+        color: #FFFFFF;
+            &:hover {
+                    color: #989898;
+}
+
+            &:active {
+                     color: $bgcolor;
+}
+}
+p {
+    color: #FFFFFF;
+}
+button, .button {
+	margin-left: 18.0rem;
+	    margin-top: 30px;
+	}
+
+.footer {
+    margin: 0 -0.9375rem;
+    max-width: none;
+    width: auto;
+    background-color: $bgcolor;
+    border-left: 1px solid #989898;
+    border-right: 1px solid #989898;
+    border-top: 1px solid #989898;
+}
+
+.large-6 {
+    width: 50%;
+    margin-top: 30px;
+}
+
+.row .row {
+    margin: 0 -0.9375rem;
+    max-width: none;
+    width: auto;
+        margin-bottom: 30px;
+}
+body{
+        background: url($img + 'bg.jpg');
+}
