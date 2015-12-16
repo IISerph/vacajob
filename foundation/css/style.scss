@@ -1,5 +1,6 @@
 $img: "../img/";
 $bgcolor: #33ccff;
+$border:  1px solid #FFFFFF;
 $margtop: 50px;
 $font : "Arial", Helvetica, Roboto, Arial, sans-serif;
 
@@ -49,6 +50,14 @@ h3 {
                      color: $bgcolor;
 }
 }
+h4 {
+        font-family: $font;
+        color: #FFFFFF;
+}
+h5 {
+        font-family: $font;
+        color: $bgcolor;
+}
 p {
     color: #FFFFFF;
 }
@@ -62,9 +71,9 @@ button, .button {
     max-width: none;
     width: auto;
     background-color: $bgcolor;
-    border-left: 1px solid #989898;
-    border-right: 1px solid #989898;
-    border-top: 1px solid #989898;
+    border-left:$border;
+    border-right:$border;
+    border-top: $border;
 }
 
 .large-6 {

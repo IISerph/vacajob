@@ -36,6 +36,14 @@ h3 {
   h3:active {
     color: #33ccff; }
 
+h4 {
+  font-family: "Arial", Helvetica, Roboto, Arial, sans-serif;
+  color: #FFFFFF; }
+
+h5 {
+  font-family: "Arial", Helvetica, Roboto, Arial, sans-serif;
+  color: #33ccff; }
+
 p {
   color: #FFFFFF; }
 
@@ -48,9 +56,9 @@ button, .button {
   max-width: none;
   width: auto;
   background-color: #33ccff;
-  border-left: 1px solid #989898;
-  border-right: 1px solid #989898;
-  border-top: 1px solid #989898; }
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF; }
 
 .large-6 {
   width: 50%;
