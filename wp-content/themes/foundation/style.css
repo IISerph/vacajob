@@ -1,3 +1,9 @@
+/*
+Theme Name: MyFoundation
+Author: Nicolas Dubiez
+Author URI: http://www.google.be
+Version 1.0
+*/
 .top-bar {
   overflow: visible;
   margin-top: 20px; }
@@ -28,6 +34,10 @@ h1 {
   color: #FFFFFF;
   line-height: 3.8125rem; }
 
+h2 {
+  font-family: "Arial", Helvetica, Roboto, Arial, sans-serif;
+  color: #FFFFFF; }
+
 h3 {
   font-family: "Arial", Helvetica, Roboto, Arial, sans-serif;
   color: #FFFFFF; }
@@ -46,6 +56,9 @@ h5 {
 
 p {
   color: #FFFFFF; }
+  p.postinfo {
+    font-size: 87%;
+    color: #999; }
 
 button, .button {
   margin-left: 18.0rem;
@@ -71,6 +84,11 @@ button, .button {
   margin-bottom: 30px; }
 
 body {
-  background: url("../img/bg.jpg"); }
+  background: url("img/bg.jpg"); }
+
+/*image style */
+img {
+  max-width: 100%;
+  height: auto; }
 
 /*# sourceMappingURL=style.css.map */
