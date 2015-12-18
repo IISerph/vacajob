@@ -1,8 +1,10 @@
 
 <?php
+//past functies toe
 add_action('init', 'styleEnqueue');
 add_action('init', 'foundationEnqueue');
 
+//algemene style en script lader gevonden op wordpress site
 // ----------------------------------------------------------------------------
 // register and enqueue styles
 // ----------------------------------------------------------------------------
@@ -46,7 +48,7 @@ add_filter('excerpt_length', 'custom_excerpt_length');
 
 //Theme setup
 function wordPress_setup(){
-	//Navigation menus
+//Navigation menus
 register_nav_menus(array(
 'home' => __( 'Home')));
 

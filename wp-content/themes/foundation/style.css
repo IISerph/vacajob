@@ -4,6 +4,7 @@ Author: Nicolas Dubiez
 Author URI: http://www.google.be
 Version 1.0
 */
+/*bepaald menubar*/
 .top-bar {
   overflow: visible;
   margin-top: 20px; }
@@ -73,9 +74,17 @@ button, .button {
   border-right: 1px solid #FFFFFF;
   border-top: 1px solid #FFFFFF; }
 
+.large-3 {
+  width: 50%;
+  margin-top: 50px; }
+
 .large-6 {
   width: 50%;
   margin-top: 30px; }
+
+.large-9 {
+  width: 50%;
+  margin-top: 50px; }
 
 .row .row {
   margin: 0 -0.9375rem;
@@ -90,5 +99,22 @@ body {
 img {
   max-width: 100%;
   height: auto; }
+
+/* krijg hier maar niet mijn custom search balk te pakken*/
+.hd-search {
+  float: right; }
+  .hd-search #s {
+    background-color: #33ccff; }
+  .hd-search #searchsubmit {
+    background-color: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 6px;
+    color: #fff;
+    font-family: "Arial", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none; }
 
 /*# sourceMappingURL=style.css.map */

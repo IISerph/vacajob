@@ -1,5 +1,5 @@
  <?php 
-   //voegt header.php toe
+    //voegt header.php toe
   get_header();?>
   
     <!-- Line row -->
@@ -9,14 +9,17 @@
   </div>
   
   <?php
-   //haalt posts op
-  if (have_posts()) :
-  //loopt deze posts
+     //haalt posts op
+  if (have_posts()) :?>
+  <h2>Zoekresultaten voor: <?php /* haalt search result op */the_search_query(); ?></h2>
+  
+  <?php
+    //loopt deze posts
 while (have_posts()) : the_post();?>
+
     <!-- Main row -->
 <div class="row">
-<div class="large-6 columns"><?php /*plaatst gesetten thumbnail*/the_post_thumbnail('small-thumbnail');?><a href="<?php the_permalink(); ?>"><h3> <?php /* weergeeft titel van post*/ the_title(); ?></h3></a>
-
+<div class="large-12 columns"><?php /*plaatst gesetten thumbnail*/ the_post_thumbnail('banner-thumbnail');?><a href="<?php the_permalink(); ?>"><h3><?php /* weergeeft titel van post*/ the_title(); ?></h3></a>
 <p class="postinfo"><?php /* datum*/ the_time('jS F Y g:i a'); ?> | by <a href="<?php /*haalt post van author op*/ echo get_author_posts_url(get_the_author_meta('ID'));?>"><?php the_author();?></a> | Posted in 
 <?php
 
@@ -34,16 +37,10 @@ if($categories) {
 }
 
  ?>
- </p><?php /*als de post een excerpt bedraagt verkort die deze*/ if($post->post_excerpt){?>
-  <p><?php echo get_the_excerpt(); ?>
-  <a href=" <?php the_permalink(); ?>">Lees meer&raquo;</a>
-  <?php } else{
-	  /*anders wordt deze normaal weergeven*/
-	  the_content();
-  } ?>
-    </p>
+ </p>
+  <p><?php /*weergeeft tekst in kort */the_excerpt(); ?>
+    </p> 
   </div>
-  
   
 <?php
 //beindigt loop van posts ophalen
@@ -62,6 +59,6 @@ if($categories) {
 </div>
   </div>
 	<?php
-//voegt footer.php toe
+	//voegt footer.php toe
 	get_footer();
 ?>

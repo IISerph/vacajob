@@ -5,7 +5,8 @@
 </div>
 
   </div>
-    <?php wp_footer(); ?>
+    <?php /* wordt evenueel gebruikt om meer data mee te geven aan de footer*/wp_footer(); ?>
+    
     <!-- Scripts -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
